@@ -1,0 +1,102 @@
+@use "global" as *;
+
+.p-organization-info {
+  @include mq(sm) {
+    width: myrem(850);
+  }
+}
+
+.p-organization-info__title {
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__item {
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__term {
+  font-size: myrem(14);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  width: calc(88 / 335 * 100%);
+  border-bottom: myrem(1) solid #ff8800;
+  text-align: center;
+  padding-block: myrem(39.5);
+  @include mq(sm) {
+    font-size: myrem(16);
+    width: calc(160 / 800 * 100%);
+  }
+}
+
+.p-organization-info__desc {
+  font-size: myrem(14);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: calc(231 / 335 * 100%);
+  border-bottom: myrem(1) solid #d9d9d9;
+  padding: myrem(39.5) 0 myrem(39.5) myrem(16);
+  @include mq(sm) {
+    font-size: myrem(16);
+    width: calc(624 / 800 * 100%);
+    padding: myrem(39.5) 0 myrem(39.5) myrem(25);
+  }
+}
+
+.p-organization-info__desc a {
+  display: inline-block;
+  color: #ff8800;
+  @include mq(sm) {
+    // display: inline;
+  }
+}
+
+.p-organization-info__desc-address {
+  margin-top: myrem(24);
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__desc-item {
+  position: relative;
+  padding-left: myrem(10);
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__desc-item + .p-organization-info__desc-item {
+  margin-top: myrem(8);
+}
+
+.p-organization-info__desc-item::before {
+  content: "";
+  width: myrem(6);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #ff8800;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  @include mq(sm) {
+  }
+}
+
+.p-organization-info__btn {
+  width: myrem(280);
+  margin-top: myrem(56);
+  margin-inline: auto;
+  @include mq(sm) {
+    margin-top: myrem(41);
+  }
+}

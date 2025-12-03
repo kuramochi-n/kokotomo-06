@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-organization-vision {
+  padding-block: myrem(80);
+  @include mq(sm) {
+    padding-block: myrem(80) myrem(110);
+  }
+}

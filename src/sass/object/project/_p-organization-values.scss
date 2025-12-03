@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-organization-values {
+  @include mq(sm) {
+  }
+}
+
+.p-organization-values__list {
+  margin-top: myrem(67);
+  @include mq(sm) {
+    margin-top: myrem(80);
+  }
+}

@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.c-item02 {
+  @include mq(sm) {
+    width: 798px;
+    margin-inline: auto;
+  }
+}
+
+.c-item02__item {
+  @include mq(sm) {
+  }
+}
+
+.c-item02__item a {
+  @include mq(sm) {
+    display: flex;
+    align-items: center;
+    gap: myrem(16);
+  }
+}
+
+.c-item02__item + .c-item02__item {
+  margin-top: myrem(34);
+  @include mq(sm) {
+    margin-top: myrem(24);
+  }
+}
+
+.c-item02-item__meta {
+  display: flex;
+  align-items: center;
+  gap: myrem(7);
+  @include mq(sm) {
+    gap: myrem(17);
+    width: calc(208 / 798 * 100%);
+  }
+}
+
+.c-item02-item__meta-date {
+  font-size: myrem(14);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  @include mq(sm) {
+    font-size: myrem(16);
+  }
+}
+
+.c-item02-item__meta-label {
+  font-size: myrem(12);
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: $white;
+  background-color: #f4b518;
+  border-radius: myrem(20);
+  min-width: myrem(107);
+  text-align: center;
+  padding-block: myrem(3);
+  @include mq(sm) {
+    font-size: myrem(13);
+  }
+}
+
+.c-item02__item:nth-child(even) .c-item02-item__meta-label {
+  background-color: #ff8800;
+}
+
+.c-item02-item__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq(sm) {
+    width: calc(590 / 798 * 100%);
+  }
+}
+
+.c-item02-item__body-text {
+  font-size: myrem(16);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  @include mq(sm) {
+  }
+}
+
+.c-item02-item__body-arrow {
+  background-color: #ffd979;
+  width: myrem(24);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  @include mq(sm) {
+    width: myrem(32);
+  }
+}
+
+.c-item02-item__body-arrow::before,
+.c-item02-item__body-arrow::after {
+  content: "";
+  position: absolute;
+  width: myrem(5);
+  height: myrem(1);
+  border-radius: 9999px;
+  background-color: $white;
+  @include mq(sm) {
+    width: myrem(8);
+    height: myrem(2);
+  }
+}
+
+.c-item02-item__body-arrow::before {
+  top: myrem(10);
+  left: myrem(10);
+  transform: rotate(45deg);
+  @include mq(sm) {
+    top: myrem(12);
+    left: myrem(13);
+  }
+}
+
+.c-item02-item__body-arrow::after {
+  top: myrem(13);
+  left: myrem(10);
+  transform: rotate(-45deg);
+  @include mq(sm) {
+    top: myrem(17);
+    left: myrem(13);
+  }
+}

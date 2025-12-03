@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.p-organization-staff {
+  background-color: #fffcf2;
+  @include mq(sm) {
+  }
+}
+
+.p-organization-staff__title {
+  @include mq(sm) {
+  }
+}
+
+.p-organization-staff__list {
+  margin-top: myrem(40);
+  @include mq(sm) {
+  }
+}

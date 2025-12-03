@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.c-btn02 {
+  font-size: myrem(16);
+  line-height: 1;
+  letter-spacing: 0;
+  font-weight: bold;
+  color: $white;
+  background-image: linear-gradient(to right, #ffb35b, #fc8804);
+  border-radius: myrem(40);
+  box-shadow: myrem(4) myrem(4) myrem(8) rgba(#000000, 0.25);
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-block: myrem(23);
+  position: relative;
+}
+
+.c-btn02::after {
+  content: "";
+  background: url(../images/organization-btn-arrow.png) no-repeat center /
+    contain;
+  width: myrem(9);
+  height: auto;
+  aspect-ratio: 18 / 30;
+  position: absolute;
+  top: myrem(25);
+  right: myrem(15);
+}

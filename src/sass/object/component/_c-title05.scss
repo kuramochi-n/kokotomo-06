@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-title05 {
+  font-size: myrem(24);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: #ff8800;
+  text-align: center;
+  @include mq(sm) {
+    font-size: myrem(32);
+  }
+}
+
+.c-title05::after {
+  content: "";
+  display: block;
+  width: myrem(30);
+  height: myrem(5);
+  background: linear-gradient(to right, #f4b518, #f4da18);
+  margin-top: myrem(8);
+  margin-inline: auto;
+}

@@ -21,6 +21,10 @@ html {
 body {
   font-family: $font-main;
   color: $black;
+  min-width: 320px;
+  @include mq(sm) {
+    min-width: 1100px;
+  }
 }
 
 // ホバー
@@ -29,7 +33,7 @@ button {
   @include mq(sm) {
     transition: 0.3s;
     &:hover {
-      opacity: 0.7;
+      opacity: 0.5;
       cursor: pointer;
     }
   }

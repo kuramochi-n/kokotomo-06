@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-organization-mv {
+  background: url(../images/organization-mv.jpg) no-repeat center / cover;
+  height: myrem(240);
+  padding: myrem(83) 0;
+  @include mq(sm) {
+    height: myrem(320);
+    padding: myrem(100) myrem(145);
+  }
+}
+
+.p-organization-mv__title {
+  font-size: myrem(32);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: $white;
+  @include mq(sm) {
+    font-size: myrem(48);
+    line-height: normal;
+    letter-spacing: 0;
+  }
+}
+
+.p-organization-mv__subtitle {
+  font-size: myrem(16);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: $white;
+  @include mq(sm) {
+    font-size: myrem(20);
+    line-height: normal;
+    letter-spacing: 0;
+    margin-top: myrem(16);
+  }
+}

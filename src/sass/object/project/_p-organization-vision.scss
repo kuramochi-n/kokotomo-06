@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.p-organization-vision {
+  position: relative;
+  @include mq(sm) {
+  }
+}
+
+.p-organization-vision::before {
+  content: "";
+  background: url(../images/organization-vision-bg_sp.png) no-repeat center /
+    cover;
+  aspect-ratio: 375 / 740;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  @include mq(sm) {
+    background: url(../images/organization-vision-bg_pc.png) no-repeat bottom /
+      cover;
+    aspect-ratio: 1440 / 560;
+    bottom: 0;
+  }
+}
+
+.p-organization-vision__inner {
+  padding-inline: myrem(20);
+  @include mq(sm) {
+    padding-inline: 0;
+  }
+}
+
+.p-organization-vision__container {
+  margin-top: myrem(40);
+  @include mq(sm) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: myrem(883);
+    margin-top: myrem(-13);
+    margin-inline: auto;
+    position: relative;
+    left: myrem(42);
+  }
+}
+
+.p-organization-vision__content {
+  @include mq(sm) {
+    width: myrem(430);
+    margin-top: myrem(20);
+  }
+}
+
+.p-organization-vision__content-head {
+  font-size: myrem(20);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  color: #ff8800;
+  padding-inline: myrem(19);
+  @include mq(sm) {
+    padding-inline: 0;
+  }
+}
+
+.p-organization-vision__content-head span {
+  display: block;
+  @include mq(sm) {
+    display: inline;
+  }
+}
+
+.p-organization-vision__content-head span:last-child {
+  text-align: right;
+  @include mq(sm) {
+    margin-left: myrem(-5);
+  }
+}
+
+.p-organization-vision__content-text {
+  font-size: myrem(16);
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  margin-top: myrem(17);
+  @include mq(sm) {
+    width: myrem(395);
+    margin-top: myrem(8);
+  }
+}
+
+.p-organization-vision__image {
+  width: myrem(324.74);
+  margin-inline: auto;
+  @include mq(sm) {
+    width: myrem(399);
+    margin-inline: 0;
+  }
+}
+
+.p-organization-vision__image img {
+  aspect-ratio: 324.74 / 262.37;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  @include mq(sm) {
+  }
+}

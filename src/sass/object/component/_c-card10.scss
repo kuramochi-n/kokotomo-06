@@ -1,0 +1,133 @@
+@use "global" as *;
+
+.c-card10 {
+  counter-reset: step-num;
+  @include mq(sm) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.c-card10__item {
+  background-color: #fffded;
+  border-radius: myrem(20);
+  min-height: myrem(472);
+  padding: 0 myrem(21) myrem(25);
+  counter-increment: values-num;
+  @include mq(sm) {
+    width: myrem(340);
+    padding: 0 myrem(24) myrem(25);
+  }
+}
+
+.c-card10__item + .c-card10__item {
+  margin-top: myrem(68);
+  @include mq(sm) {
+    margin-top: 0;
+  }
+}
+
+.c-card10__item::before {
+  content: counter(values-num);
+  font-size: myrem(24);
+  line-height: 0.8;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: $white;
+  background-color: #ff8800;
+  width: myrem(56);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: myrem(-13);
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: myrem(-14);
+}
+
+.c-card10-item__title {
+  font-size: myrem(18);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  text-align: center;
+  padding-inline: myrem(10);
+  @include mq(sm) {
+    font-size: myrem(20);
+    font-weight: 700;
+  }
+}
+
+.c-card10-item__image-wrapper {
+  width: myrem(120);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: myrem(23);
+  margin-inline: auto;
+  @include mq(sm) {
+  }
+}
+
+.c-card10-item__image {
+  @include mq(sm) {
+  }
+}
+
+.c-card10-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  @include mq(sm) {
+  }
+}
+
+.c-card10__item:nth-child(1) .c-card10-item__image {
+  width: myrem(73);
+  @include mq(sm) {
+  }
+}
+
+.c-card10__item:nth-child(1) .c-card10-item__image img {
+  aspect-ratio: 73.5 / 56;
+  @include mq(sm) {
+  }
+}
+.c-card10__item:nth-child(2) .c-card10-item__image {
+  width: myrem(84);
+  @include mq(sm) {
+  }
+}
+
+.c-card10__item:nth-child(2) .c-card10-item__image img {
+  aspect-ratio: 84 / 56;
+  @include mq(sm) {
+  }
+}
+.c-card10__item:nth-child(3) .c-card10-item__image {
+  width: myrem(80);
+  @include mq(sm) {
+  }
+}
+
+.c-card10__item:nth-child(3) .c-card10-item__image img {
+  aspect-ratio: 80 / 65;
+  @include mq(sm) {
+  }
+}
+
+.c-card10-item__text {
+  font-size: myrem(16);
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+  margin-top: myrem(25);
+  @include mq(sm) {
+  }
+}

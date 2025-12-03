@@ -28,9 +28,275 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.min.js"></script>
 </head>
+
 <body>
-  <div class="l-inner">
-    <p class="p-test">TOPページです</p>
-  </div>
+  <main>
+    <!-- mv -->
+    <div class="p-organization-mv">
+      <div class="p-organization-mv__inner l-inner">
+        <h2 class="p-organization-mv__title">団体情報</h2>
+        <p class="p-organization-mv__subtitle">ココトモについて</p>
+      </div>
+    </div>
+
+    <!-- ココトモの想い -->
+    <section class="p-organization-vision l-organization-vision">
+      <div class="p-organization-vision__inner">
+        <h2 class="p-organization-vision__title c-title05">ココトモの想い</h2>
+        <div class="p-organization-vision__container">
+          <div class="p-organization-vision__content">
+            <div class="p-organization-vision__content-head">
+              <span>悩みを抱える人たちの</span>
+              <span>『居場所』を作ること</span>
+            </div>
+            <p class="p-organization-vision__content-text">
+              それがココトモの最も大きな想いです。<br>
+              そのためにココトモは「友達として相談にのる」をコンセプトに、ネットとリアルを通じて心寄り添う繋がりが生まれる場所を目指します。
+            </p>
+          </div>
+          <picture class="p-organization-vision__image">
+            <source srcset="./images/organization-vision-image_sp.webp" type="image/webp" media="(max-width: 599px)">
+            <source srcset="./images/organization-vision-image_pc.png" type="image/png" media="(max-width: 599px)">
+            <source srcset="./images/organization-vision-image_pc.webp" type="image/webp" media="(min-width: 600px)">
+            <source srcset="./images/organization-vision-image_pc.png" type="image/png" media="(min-width: 600px)">
+            <img src="./images/organization-vision-image_sp.png" alt="" width="324" height="262" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ココトモが叶いたい3つのこと -->
+    <section class="p-organization-values l-organization-values l-inner">
+      <h2 class="p-organization-values__title c-title05">
+        ココトモが叶えたい3つのこと
+      </h2>
+      <ul class="p-organization-values__list c-card10">
+        <li class="c-card10__item c-card10-item">
+          <h3 class="c-card10-item__title">
+            いつでも、誰でも、無料で、<br class="u-desktop">相談相手が見つかる
+          </h3>
+          <div class="c-card10-item__image-wrapper">
+            <div class="c-card10-item__image">
+              <img src="./images/organization-values01.png" alt="吹き出しのアイコン" width="73" height="56" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <p class="c-card10-item__text">
+            悩みを抱える人がwebで検索すれば必ずたどり着けるサイトを目指します。 <br>
+            いつでも、誰でも、無料で、相談相手が見つかるサービスを世の中に提供できたら、優しい世の中になるんじゃないかなって思うのです(*´`)
+          </p>
+        </li>
+        <li class="c-card10__item c-card10-item">
+          <h3 class="c-card10-item__title">
+            webでもリアルでも<br>
+            悩みを話せる友達が見つかる
+          </h3>
+          <div class="c-card10-item__image-wrapper">
+            <div class="c-card10-item__image">
+              <img src="./images/organization-values02.png" alt="2人でハイタッチしているアイコン" width="84" height="56" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <p class="c-card10-item__text">
+            過去や悩みも含めてお互いを受け入れあえる友達が見つかる場所を目指します。安心して自分のことを話せる繋がりが生まれることで、人と関わるあたたかさを感じたり、人と関わる自信をつけてもらえたら嬉しいです☆
+          </p>
+        </li>
+        <li class="c-card10__item c-card10-item">
+          <h3 class="c-card10-item__title">
+            相談に訪れた方が、<br>
+            やがて相談にのる立場になる
+          </h3>
+          <div class="c-card10-item__image-wrapper">
+            <div class="c-card10-item__image">
+              <img src="./images/organization-values03.png" alt="ハートの形を表す握手のアイコン" width="80" height="65" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <p class="c-card10-item__text">
+            相談に訪れた方がやがてメンバーとして相談にのる立場になり、感謝を繋ぐ活動を目指します。ココトモで励まされた経験を、今度は誰かのために使うことで自信をつけ、お互いの心が癒されていく連鎖が広がる場所にしたいです^^
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 運営スタッフ -->
+    <section class="p-organization-staff l-organization-staff">
+      <div class="p-organization-staff__inner l-inner">
+        <h2 class="p-organization-staff__title c-title05">
+          運営スタッフ
+        </h2>
+        <ul class="p-organization-staff__list c-card11">
+          <li class="c-card11__item c-card11-item">
+            <div class="c-card11-item__image-wrapper">
+              <picture class="c-card11-item__image">
+                <source srcset="./images/organization-staff-01_pc.png" media="(min-width: 600px)">
+                <img src="./images/organization-staff-01_sp.png" alt="運営スタッフの1枚目" width="280" height="240" loading="lazy" decoding="async">
+              </picture>
+              <span class="c-card11-item__name">
+                <span class="c-card11-item__name-last">佐藤</span>
+                <span class="c-card11-item__name-first">花子</span>
+              </span>
+            </div>
+            <div class="c-card11-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </div>
+          </li>
+          <li class="c-card11__item c-card11-item">
+            <div class="c-card11-item__image-wrapper">
+              <picture class="c-card11-item__image">
+                <source srcset="./images/organization-staff-02_pc.png" media="(min-width: 600px)">
+                <img src="./images/organization-staff-02_sp.png" alt="運営スタッフの2枚目" width="280" height="240" loading="lazy" decoding="async">
+              </picture>
+              <span class="c-card11-item__name">
+                <span class="c-card11-item__name-last">鈴木</span>
+                <span class="c-card11-item__name-first">太郎</span>
+              </span>
+            </div>
+            <div class="c-card11-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </div>
+          </li>
+          <li class="c-card11__item c-card11-item">
+            <div class="c-card11-item__image-wrapper">
+              <picture class="c-card11-item__image">
+                <source srcset="./images/organization-staff-03_pc.png" media="(min-width: 600px)">
+                <img src="./images/organization-staff-03_sp.png" alt="運営スタッフの3枚目" width="280" height="240" loading="lazy" decoding="async">
+              </picture>
+              <span class="c-card11-item__name">
+                <span class="c-card11-item__name-last">佐藤</span>
+                <span class="c-card11-item__name-first">花子</span>
+              </span>
+            </div>
+            <div class="c-card11-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </div>
+          </li>
+          <li class="c-card11__item c-card11-item">
+            <div class="c-card11-item__image-wrapper">
+              <picture class="c-card11-item__image">
+                <source srcset="./images/organization-staff-04_pc.png" media="(min-width: 600px)">
+                <img src="./images/organization-staff-04_sp.png" alt="運営スタッフの4枚目" width="280" height="240" loading="lazy" decoding="async">
+              </picture>
+              <span class="c-card11-item__name">
+                <span class="c-card11-item__name-last">佐藤</span>
+                <span class="c-card11-item__name-first">花子</span>
+              </span>
+            </div>
+            <div class="c-card11-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </div>
+          </li>
+          <li class="c-card11__item c-card11-item">
+            <div class="c-card11-item__image-wrapper">
+              <picture class="c-card11-item__image">
+                <source srcset="./images/organization-staff-05_pc.png" media="(min-width: 600px)">
+                <img src="./images/organization-staff-05_sp.png" alt="運営スタッフの5枚目" width="280" height="240" loading="lazy" decoding="async">
+              </picture>
+              <span class="c-card11-item__name">
+                <span class="c-card11-item__name-last">鈴木</span>
+                <span class="c-card11-item__name-first">太郎</span>
+              </span>
+            </div>
+            <div class="c-card11-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section class="p-organization-news l-organization-news l-inner">
+      <h2 class="p-organization-news__title c-title05">
+        お知らせ
+      </h2>
+      <ul class="p-organization-news__list c-item02">
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">掲載</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇に掲載されました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">プレスリリース</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇を行いました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">掲載</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇に掲載されました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">プレスリリース</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇を行いました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">掲載</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇に掲載されました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+        <li class="c-item02__item c-item02-item">
+          <a href="">
+            <div class="c-item02-item__meta">
+              <time datetime="2025-11-15" class="c-item02-item__meta-date">2025.11.15</time>
+              <span class="c-item02-item__meta-label">プレスリリース</span>
+            </div>
+            <div class="c-item02-item__body">
+              <p class="c-item02-item__body-text">
+                〇〇を行いました。
+              </p>
+              <span class="c-item02-item__body-arrow"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="p-organization-news__btn">
+        <a href="" class="c-btn02">すべてを見る</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>

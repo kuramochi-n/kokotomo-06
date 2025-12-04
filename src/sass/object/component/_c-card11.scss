@@ -24,14 +24,10 @@
 
 .c-card11-item__image-wrapper {
   position: relative;
-  @include mq(sm) {
-  }
 }
 
 .c-card11-item__image {
   width: 100%;
-  @include mq(sm) {
-  }
 }
 
 .c-card11-item__image img {
@@ -58,16 +54,6 @@
   left: 0;
   @include mq(sm) {
     font-size: myrem(20);
-  }
-}
-
-.c-card11-item__name-last {
-  @include mq(sm) {
-  }
-}
-
-.c-card11-item__name-first {
-  @include mq(sm) {
   }
 }
 

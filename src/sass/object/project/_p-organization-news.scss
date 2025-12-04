@@ -1,19 +1,7 @@
 @use "global" as *;
 
-.p-organization-news {
-  @include mq(sm) {
-  }
-}
-
-.p-organization-news__title {
-  @include mq(sm) {
-  }
-}
-
 .p-organization-news__list {
   margin-top: myrem(41);
-  @include mq(sm) {
-  }
 }
 
 .p-organization-news__btn {

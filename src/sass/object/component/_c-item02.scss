@@ -7,11 +7,6 @@
   }
 }
 
-.c-item02__item {
-  @include mq(sm) {
-  }
-}
-
 .c-item02__item a {
   @include mq(sm) {
     display: flex;
@@ -80,8 +75,6 @@
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
-  @include mq(sm) {
-  }
 }
 
 .c-item02-item__body-arrow {

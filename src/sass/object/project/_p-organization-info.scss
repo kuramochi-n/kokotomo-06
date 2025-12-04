@@ -6,22 +6,10 @@
   }
 }
 
-.p-organization-info__title {
-  @include mq(sm) {
-  }
-}
-
 .p-organization-info__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  @include mq(sm) {
-  }
-}
-
-.p-organization-info__item {
-  @include mq(sm) {
-  }
 }
 
 .p-organization-info__term {
@@ -49,29 +37,22 @@
   @include mq(sm) {
     font-size: myrem(16);
     width: calc(624 / 800 * 100%);
-    padding: myrem(39.5) 0 myrem(39.5) myrem(25);
+    padding: myrem(39.5) myrem(25) myrem(39.5) myrem(25);
   }
 }
 
 .p-organization-info__desc a {
   display: inline-block;
   color: #ff8800;
-  @include mq(sm) {
-    // display: inline;
-  }
 }
 
 .p-organization-info__desc-address {
   margin-top: myrem(24);
-  @include mq(sm) {
-  }
 }
 
 .p-organization-info__desc-item {
   position: relative;
   padding-left: myrem(10);
-  @include mq(sm) {
-  }
 }
 
 .p-organization-info__desc-item + .p-organization-info__desc-item {
@@ -88,8 +69,6 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  @include mq(sm) {
-  }
 }
 
 .p-organization-info__btn {

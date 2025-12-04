@@ -2,7 +2,7 @@
 
 .u-desktop {
   display: none;
-  @include mq(md) {
+  @include mq(sm) {
     display: block;
   }
 }

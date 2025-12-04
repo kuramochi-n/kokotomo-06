@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .l-organization-values {
-  padding-block: myrem(84) myrem(80);
+  padding-block: myrem(79) myrem(80);
   @include mq(sm) {
     padding-block: myrem(119) myrem(120);
   }

@@ -2,8 +2,6 @@
 
 .p-organization-vision {
   position: relative;
-  @include mq(sm) {
-  }
 }
 
 .p-organization-vision::before {
@@ -12,9 +10,10 @@
     cover;
   aspect-ratio: 375 / 740;
   width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
   left: 0;
+  bottom: 0;
   z-index: -1;
   @include mq(sm) {
     background: url(../images/organization-vision-bg_pc.png) no-repeat bottom /
@@ -104,6 +103,4 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  @include mq(sm) {
-  }
 }

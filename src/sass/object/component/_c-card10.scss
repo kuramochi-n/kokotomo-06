@@ -72,55 +72,34 @@
   justify-content: center;
   margin-top: myrem(23);
   margin-inline: auto;
-  @include mq(sm) {
-  }
-}
-
-.c-card10-item__image {
-  @include mq(sm) {
-  }
 }
 
 .c-card10-item__image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  @include mq(sm) {
-  }
 }
 
 .c-card10__item:nth-child(1) .c-card10-item__image {
   width: myrem(73);
-  @include mq(sm) {
-  }
 }
 
 .c-card10__item:nth-child(1) .c-card10-item__image img {
   aspect-ratio: 73.5 / 56;
-  @include mq(sm) {
-  }
 }
 .c-card10__item:nth-child(2) .c-card10-item__image {
   width: myrem(84);
-  @include mq(sm) {
-  }
 }
 
 .c-card10__item:nth-child(2) .c-card10-item__image img {
   aspect-ratio: 84 / 56;
-  @include mq(sm) {
-  }
 }
 .c-card10__item:nth-child(3) .c-card10-item__image {
   width: myrem(80);
-  @include mq(sm) {
-  }
 }
 
 .c-card10__item:nth-child(3) .c-card10-item__image img {
   aspect-ratio: 80 / 65;
-  @include mq(sm) {
-  }
 }
 
 .c-card10-item__text {
@@ -128,6 +107,4 @@
   line-height: 1.6;
   letter-spacing: 0.04em;
   margin-top: myrem(25);
-  @include mq(sm) {
-  }
 }

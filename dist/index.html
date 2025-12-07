@@ -111,7 +111,13 @@
           <li class="c-card11__item c-card11-item">
             <div class="c-card11-item__image-wrapper">
               <picture class="c-card11-item__image">
+                <!-- 画像（PC）設定について
+                <source srcset="ここにPC用の画像を設定する" media="(min-width: 600px)">
+                -->
                 <source srcset="./images/organization-staff-01_pc.png" media="(min-width: 600px)">
+                <!-- 画像（SP）設定について
+                <img src="ここにSP用の画像を設定する" alt="運営スタッフの1枚目" width="280" height="240" loading="lazy" decoding="async">
+                -->
                 <img src="./images/organization-staff-01_sp.png" alt="運営スタッフの1枚目" width="280" height="240" loading="lazy" decoding="async">
               </picture>
               <h3 class="c-card11-item__name">
@@ -350,6 +356,7 @@
         </div>
       </div>
     </section>
+
   </main>
 </body>
 </html>

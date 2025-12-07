@@ -26,6 +26,8 @@
   z-index: 1;
   @include mq(sm) {
     width: myrem(620);
+    position: absolute;
+    top: myrem(314);
   }
 }
 
